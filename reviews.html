@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Reviews</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- HEADER: Contains logo, title, and navigation (Same as index.html) -->
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Site Logo">
+    </div>
+    <h1>TITLE</h1>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+      &#9776;
+    </button>
+    <nav>
+      <ul id="primary-navigation" class="navigation-links desktop-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Customer Reviews</a></li>
+      </ul>
+      <ul class="navigation-links mobile-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Customer Reviews</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT: Page-specific content goes here -->
+  <main>
+    <section class="reviews-list">
+      <h2>Customer Reviews</h2>
+
+      <!-- Review 1 -->
+      <article class="review">
+        <h4>Name 1</h4>
+        <p class="review-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+      </article>
+
+      <!-- Review 2 -->
+      <article class="review">
+        <h4>Name 2</h4>
+        <p class="review-body">"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+      </article>
+
+      <!-- Review 3 -->
+      <article class="review">
+        <h4>Name 3</h4>
+        <p class="review-body">"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
+      </article>
+      
+      <!-- Review 4 -->
+      <article class="review">
+        <h4>Name 4</h4>
+        <p class="review-body">"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      </article>
+      
+    </section>
+  </main>
+
+  <!-- FOOTER: Shared across all pages (Same as index.html) -->
+  <footer>
+    <div class="socials">
+      <h3>Socials</h3>
+      <a href="#" aria-label="Facebook">FB</a>
+      <a href="#" aria-label="Instagram">IG</a>
+      <a href="#" aria-label="Twitter">TW</a>
+    </div>
+    <div class="subscribe">
+      <h3>Subscribe to news</h3>
+      <form class="subscribe-form">
+        <label for="email_subscribe" class="sr-only">Email:</label>
+        <input type="email" id="email_subscribe" name="email" placeholder="Your email address">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </footer>
+
+</body>
+</html>
