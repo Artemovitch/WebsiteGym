@@ -4,33 +4,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
-  <meta name="description" content="Want to get fit? We have the best gyms in the United States. We have tons of machines to choose from to hit every single muscle group you could think of. Cardio? we got you here. A wide selection of classes to get in fit as well!">
-  <link rel="icon" href="images/Logo.png" type="image/x-icon">
+  <title>Home | ABC Fitness Studio</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <header>
     <div class="logo">
-      <img src="images/Logo.png" alt="Logo">
+      <img src="images/logo.png" alt="Site Logo">
     </div>
-    <h1>TITLE</h1>
+    <h1>ABC Fitness Studio</h1>
     
-    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-      <span class="sr-only">Menu</span>
+    <button class="mobile-nav-toggle" aria-controls="mobile-navigation" aria-expanded="false">
+      <span class="screen-reader">Menu</span>
       <i class="fas fa-bars" aria-hidden="true"></i>
     </button>
-
+    
     <nav>
-      <ul id="primary-navigation" class="navigation-links desktop-nav">
+      <ul class="navigation-links desktop-nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About us</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="reviews.html">Customer Reviews</a></li>
       </ul>
-
-      <ul class="navigation-links mobile-nav">
+      <ul id="mobile-navigation" class="navigation-links mobile-nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About us</a></li>
         <li><a href="gallery.html">Gallery</a></li>
@@ -42,12 +41,28 @@
   <main>
     <section class="offer">
       <h2>What we offer</h2>
-      <div class="placeholder-box" style="width: 90%; height: 150px; background: #eee; border: 1px solid #ccc; margin: auto;"></div>
+      <div class="index-box">
+        <p class="about-us-content">
+          Want to get fit? We have the best gyms in the United States. We offer tons of machines to choose from to hit every single muscle group you could think of. 
+        </p>
+        <p class="about-us-content">
+          Our mission is to make fitness accessible and enjoyable for people of all levels. Experienced trainers deliver personalized programs and regular progress checks, and our facilities include modern equipment, clean locker rooms, and dedicated areas for free weights, functional training, and stretching.
+          <br>
+          <br>
+          Ready to join or learn more? Use the contact form below to ask about memberships, class schedules, or to book a free trial session.
+      </p>
+      </div>
     </section>
 
     <section class="classes">
       <h2>Classes</h2>
-      <div class="placeholder-box" style="width: 90%; height: 150px; background: #eee; border: 1px solid #ccc; margin: auto;"></div>
+      <div class="index-box">
+        <ul id="about-us-list">
+          <li>Group & Individual Yoga</li>
+          <li>Group & Individual Pilates</li>
+          <li>Group & Individual Kickboxing</li>
+        </ul>
+      </div>
     </section>
 
     <section class="interested">
@@ -59,11 +74,10 @@
   <footer>
     <div class="socials">
       <h3>Socials</h3>
-      <a href="#" aria-label="Facebook">FaceBook</a>
+      <a href="#" aria-label="Facebook">Facebook</a>
       <a href="#" aria-label="Instagram">Instagram</a>
       <a href="#" aria-label="Twitter">Twitter</a>
     </div>
-    
     <div class="subscribe">
       <h3>Subscribe to news</h3>
       <form class="subscribe-form">
@@ -73,7 +87,6 @@
       </form>
     </div>
   </footer>
-
 </body>
 </html>
 

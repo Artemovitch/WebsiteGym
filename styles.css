@@ -1,15 +1,9 @@
-/* --------------------
-  Global Styles & Mobile-First Defaults
-  (This is the base for your mobile layout)
-  --------------------
-*/
 
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
-/* Basic setup */
 :root {
-  /* Updated Color Palette */
+  /* Color Palette */
   --bg-color: #D3D3D3;          /* Wellness Gray */
   --text-color: #00231C;       /* Detritus Green */
   --title-color: #634E99;       /* Pilates Purple */
@@ -17,59 +11,56 @@
   --footer-bg: #001F3F;         /* Nourish Navy */
   --footer-text: #D3D3D3;       /* Wellness Gray */
   
-  --secondary-color: #ccc;     /* Kept for borders */
-  --header-bg: #fff;           /* Kept for header/section contrast */
-  --button-text: #fff;         /* Kept for button text */
+  --secondary-color: #ccc;     /* borders */
+  --header-bg: #fff;           /* header/section contrast */
+  --button-text: #fff;         /* button text */
 }
 
 body {
-  /* Typography: Body (Calibri Normal 16px) */
+  /* Typography: Calibri Normal 16px (Body) */
   font-family: 'Calibri', 'Trebuchet MS', Arial, sans-serif;
   font-size: 16px;
   font-weight: normal;
   
   margin: 0;
   padding: 0;
-  
-  /* Color: Background and Text */
+
   background-color: var(--bg-color);
   color: var(--text-color);
 }
 
-/* Set all elements to have intuitive box-sizing */
-*,
-*::before,
-*::after {
+/* Box sizing */
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
-/* --- Typography --- */
-h1, h2, h3, h4, h5, h6 {
+/* Typography */
+h1, h2, h3, h4, h5 {
   margin-top: 0;
 }
 
-/* Typography: Title Large (Arial Bold 30px) */
+/* Typography: Arial Bold 30px (Title)*/
 h1 {
   font-family: Arial, sans-serif;
   font-weight: bold;
   font-size: 30px;
 }
 
-/* Typography: Title (Arial Bold 25px) */
+/* Typography: Arial Bold 25px (Title) */
 h2 {
   font-family: Arial, sans-serif;
   font-weight: bold;
   font-size: 25px;
 }
 
-/* Typography: Subtitle (Comfortaa Normal 15px) */
+/* Typography: Comfortaa Normal 15px (Footer, Gallery) */
 h3 {
   font-family: 'Comfortaa', 'Calibri', sans-serif;
   font-weight: normal;
   font-size: 15px;
 }
 
-/* Typography: Body Strong (Calibri Bold 16px) */
+/* Typography: Calibri Bold 16px (Reviews) */
 h4 {
   font-family: 'Calibri', 'Trebuchet MS', Arial, sans-serif;
   font-weight: bold;
@@ -83,47 +74,47 @@ img {
   display: block;
 }
 
-/* Screen Reader Only Class */
-.sr-only {
+/* Screen Reader */
+.screen-reader {
   position: absolute;
   width: 1px;
   height: 1px;
   padding: 0;
-  margin: -1px;
+  margin: 0;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
-  border: 0;
 }
 
-/* --------------------
+/* ------------------
   Header & Navigation (Mobile)
-  --------------------
+  ~~~~~~~~~~~~~~~~~~~
 */
 header {
-  /* UPDATED: Changed from horizontal flex to vertical flex column */
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1.5rem 1rem;
-  position: relative; /* For mobile nav positioning */
+  position: relative; 
 }
 
 .logo img {
-  width: 80px;
-  height: auto;
-  margin-bottom: 0.5rem;
-}
-
-h1 {
+  width: 120px;
   margin-bottom: 1rem;
 }
 
-/* Color: Title */
+h1 {
+  margin-bottom: 2rem;
+}
+
+
 header h1 {
-  font-size: 1.5rem;
-  margin: 0;
-  color: var(--title-color); /* Applied Pilates Purple */
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 1000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 1;
+  color: var(--title-color); /* Pilates Purple */
 }
 
 /* Mobile Hamburger Button */
@@ -133,10 +124,10 @@ header h1 {
   border: 0;
   font-size: 1.5rem;
   cursor: pointer;
-  color: var(--text-color); /* Applied Detritus Green */
+  color: var(--text-color); /* Detritus Green */
 }
 
-/* Navigation Lists */
+/* Navigation */
 nav {
   width: 100%; 
   text-align: center;
@@ -160,18 +151,17 @@ nav {
   display: block;
   padding: 1rem;
   text-decoration: none;
-  color: var(--text-color); /* Applied Detritus Green */
+  color: var(--text-color); /* Detritus Green */
   font-weight: bold;
-  /* Typography: Matches "Body Strong" */
   font-family: 'Calibri', 'Trebuchet MS', Arial, sans-serif;
   font-size: 16px; 
 }
 
 .navigation-links a:hover {
-  background-color: var(--bg-color); /* Use gray background on hover */
+  background-color: var(--bg-color); 
 }
 
-/* HIDE the navigations by default */
+/* Hide nav by default */
 .desktop-nav {
   display: none; 
 }
@@ -185,9 +175,9 @@ nav {
 }
 
 
-/* --------------------
-  Main Content & Sections (Mobile)
-  --------------------
+/* ------------------
+  Main & Sections (Mobile)
+  ~~~~~~~~~~~~~~~~~~~
 */
 main {
   padding: 1rem;
@@ -196,7 +186,7 @@ main {
 
 /* Spacing for all main sections */
 main section {
-  background-color: #fff; /* Keep sections white for contrast */
+  background-color: #fff; 
   padding: 1.5rem 1rem;
   margin-bottom: 1rem;
   border-radius: 8px;
@@ -204,21 +194,19 @@ main section {
 }
 
 /* General button styling */
-button,
-.button {
+button, .button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: var(--button-bg); /* Applied Box Jump Blue */
+  background-color: var(--button-bg); /* Box Jump Blue */
   color: var(--button-text);
   border: none;
   border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
-  text-align: center;
-  /* Typography: Body (Calibri Normal 16px) */
+  text-align: center; /* Calibri Normal 16px */
   font-family: 'Calibri', 'Trebuchet MS', Arial, sans-serif;
   font-size: 16px;
-  font-weight: bold; /* Make buttons bold */
+  font-weight: bold; 
 }
 
 button:hover,
@@ -226,17 +214,17 @@ button:hover,
   opacity: 0.85;
 }
 
-/* --------------------
+/* ------------------
   Footer (Mobile)
-  --------------------
+  ~~~~~~~~~~~~~~~~~~~
 */
 footer {
-  background-color: var(--footer-bg); /* Applied Nourish Navy */
-  color: var(--footer-text); /* Applied Wellness Gray */
+  background-color: var(--footer-bg); /* Nourish Navy */
+  color: var(--footer-text); /* Wellness Gray */
   padding: 2rem 1rem;
   text-align: center;
   
-  /* Typography: Captions (Arial Bold 11px) */
+  /* Typography: Arial Bold 11px (caption) */
   font-family: Arial, sans-serif;
   font-weight: bold;
   font-size: 11px;
@@ -247,7 +235,7 @@ footer {
 }
 
 .socials a {
-  color: var(--footer-text); /* Applied Wellness Gray */
+  color: var(--footer-text); /* Wellness Gray */
   text-decoration: none;
   font-size: 1.5rem;
   margin: 0 0.5rem;
@@ -264,65 +252,106 @@ footer {
   border: none;
   border-radius: 5px;
   margin-bottom: 0.5rem;
-  /* Typography: Captions (Arial Bold 11px) */
+  /* Typography Arial Bold 11px */
   font-family: Arial, sans-serif;
   font-weight: bold;
   font-size: 11px;
 }
 
-/* --------------------
+/* ------------------
   Page-Specific Styles (Mobile)
-  --------------------
+  ~~~~~~~~~~~~~~~~~~~
 */
+/* --- Home Page --- */
+
+.offer {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.classes {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.classes li {
+  text-align: left;
+}
+
+.interested {
+  width: 70%;
+  margin: 20px auto;
+  text-align: center;
+}
 
 /* --- About Us Page --- */
+#about-us-list {
+  list-style-position: inside;
+}
+
 .contact-form-section {
   text-align: left;
 }
 
-.form-group {
+.form-section {
   margin-bottom: 1rem;
 }
 
-.form-group label {
+.form-section label {
   display: block;
   margin-bottom: 0.25rem;
-  /* Typography: Body Strong (Calibri Bold 16px) */
+  /* Typography: Calibri Bold 16px */
   font-family: 'Calibri', 'Trebuchet MS', Arial, sans-serif;
   font-weight: bold;
   font-size: 16px;
 }
 
-.form-group input,
-.form-group textarea {
+.form-section input,
+.form-section textarea {
   width: 100%;
   padding: 0.75rem;
   border: 1px solid var(--secondary-color);
   border-radius: 5px;
-  /* Typography: Body (Calibri Normal 16px) */
+  /* Typography: Calibri Normal 16px */
   font-family: 'Calibri', 'Trebuchet MS', Arial, sans-serif;
   font-size: 16px;
 }
 
 .submit-form-btn {
   width: 100%;
+  margin-top: 1rem;
 }
 
 /* --- Gallery Page --- */
 .gallery-header {
+  width: 40%;
+  margin: 2rem auto;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
 }
 
+
 .gallery-nav ul {
   list-style: none;
   padding: 0;
-  margin: 0 0 1rem 0;
+  margin: 0 0 0 0 auto;
   display: flex;
   justify-content: center;
   gap: 1rem;
+}
+
+.gallery-nav a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--text-color); /* Applied Detritus Green */
+  font-weight: bold;
+  /* Typography: Matches "Body Strong" */
+  font-family: 'Calibri', 'Trebuchet MS', Arial, sans-serif;
+  font-size: 16px; 
 }
 
 .gallery-section {
@@ -421,7 +450,7 @@ footer {
   
   .desktop-nav a:hover {
     background-color: transparent;
-    color: var(--button-bg); /* Hover color to Box Jump Blue */
+    color: var(--button-bg); 
   }
 
   .mobile-nav {
@@ -470,19 +499,25 @@ footer {
   */
   
   /* --- Home Page --- */
-  .home-sections {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+
+  .offer {
+  width: 70%;
+  margin: 2rem auto;
   }
-  
+
+  .classes {
+  width: 40%;
+  margin: 2rem auto;
+  }
+
   .interested {
-    grid-column: 1 / -1; 
+    width: 40%;
+    margin: 20px auto;
     text-align: center;
   }
 
   /* --- About Page --- */
-  .about-us-layout {
+  .about-us- {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -504,6 +539,10 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+  }
+
+  .gallery-nav {
+    display: none
   }
 
   /* --- Reviews Page --- */

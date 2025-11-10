@@ -4,30 +4,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery</title>
+  <title>Gallery | ABC Fitness Studio</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
-  <!-- HEADER: Contains logo, title, and navigation (Same as index.html) -->
   <header>
     <div class="logo">
       <img src="images/logo.png" alt="Site Logo">
     </div>
-    <h1>TITLE</h1>
-    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-      <span class="sr-only">Menu</span>
-      &#9776;
+    <h1>ABC Fitness Studio</h1>
+    
+    <button class="mobile-nav-toggle" aria-controls="mobile-navigation" aria-expanded="false">
+      <span class="screen-reader">Menu</span>
+      <i class="fas fa-bars" aria-hidden="true"></i>
     </button>
+    
     <nav>
-      <ul id="primary-navigation" class="navigation-links desktop-nav">
+      <ul class="navigation-links desktop-nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About us</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="reviews.html">Customer Reviews</a></li>
       </ul>
-      <ul class="navigation-links mobile-nav">
+      <ul id="mobile-navigation" class="navigation-links mobile-nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About us</a></li>
         <li><a href="gallery.html">Gallery</a></li>
@@ -36,14 +38,16 @@
     </nav>
   </header>
 
-  <!-- MAIN CONTENT: Page-specific content goes here -->
+
   <main>
-    <div class="gallery-header">
+    <section class="gallery-header">
       <h2>Gallery</h2>
-      <button type="button" class="cart-button">View Cart (0)</button>
     </div>
 
-    <!-- This nav is for the sub-categories on this page -->
+    <button type="button" class="cart-button">View Cart (0)</button>
+    </section>
+    
+    <section class = "gallery-nav">
     <nav class="gallery-nav">
       <ul>
         <li><a href="#group-classes">Group classes</a></li>
@@ -51,26 +55,26 @@
         <li><a href="#merchandise">Merchandise</a></li>
       </ul>
     </nav>
-
+    </section>
     <section id="group-classes" class="gallery-section">
       <h3>Group classes</h3>
       <div class="gallery-grid">
         <!-- Gallery Item 1 -->
         <article class="gallery-item">
-          <img src="https://placehold.co/300x200/eee/ccc?text=Class+Image" alt="Group Class 1">
-          <p>Description for group class 1.</p>
+          <img src="images/Client2_GroupKickboxing.png" alt="Group Class Kickboxing">
+          <p>High intensity group kickboxing class</p>
           <button type="button">Add to Cart</button>
         </article>
         <!-- Gallery Item 2 -->
         <article class="gallery-item">
-          <img src="https://placehold.co/300x200/eee/ccc?text=Class+Image" alt="Group Class 2">
-          <p>Description for group class 2.</p>
+          <img src="images/Client2_GroupPilates.png" alt="Group Class Pilates">
+          <p>Core stability group pilates class</p>
           <button type="button">Add to Cart</button>
         </article>
         <!-- Gallery Item 3 -->
         <article class="gallery-item">
-          <img src="https://placehold.co/300x200/eee/ccc?text=Class+Image" alt="Group Class 3">
-          <p>Description for group class 3.</p>
+          <img src="images/Client2_GroupYoga.png" alt="Group Class Yoga">
+          <p>Flexy group yoga class</p>
           <button type="button">Add to Cart</button>
         </article>
       </div>
@@ -81,20 +85,20 @@
       <div class="gallery-grid">
         <!-- Gallery Item 1 -->
         <article class="gallery-item">
-          <img src="https://placehold.co/300x200/eee/ccc?text=Class+Image" alt="Individual Class 1">
-          <p>Description for individual class 1.</p>
+          <img src="images/Client2_IndividualKickboxing.png" alt="Individual Class Kickboxing">
+          <p>High intensity individual kickboxing class</p>
           <button type="button">Add to Cart</button>
         </article>
         <!-- Gallery Item 2 -->
         <article class="gallery-item">
-          <img src="https://placehold.co/300x200/eee/ccc?text=Class+Image" alt="Individual Class 2">
-          <p>Description for individual class 2.</p>
+          <img src="images/Client2_IndividualPilates.png" alt="Individual Class Pilates">
+          <p>Core stability individual pilates class</p>
           <button type="button">Add to Cart</button>
         </article>
         <!-- Gallery Item 3 -->
         <article class="gallery-item">
-          <img src="https://placehold.co/300x200/eee/ccc?text=Class+Image" alt="Individual Class 3">
-          <p>Description for individual class 3.</p>
+          <img src="images/Client2_IndividualYoga.png" alt="Individual Class Yoga">
+          <p>Flexy individual yoga class</p>
           <button type="button">Add to Cart</button>
         </article>
       </div>
@@ -105,33 +109,33 @@
       <div class="gallery-grid">
         <!-- Gallery Item 1 -->
         <article class="gallery-item">
-          <img src="https://placehold.co/300x200/eee/ccc?text=Merch+Image" alt="Merchandise 1">
-          <p>Description for merchandise 1.</p>
+          <img src="images/Client2_TeeShirt.png" alt="Merchandise Shirt">
+          <p>Unisex T-shirt</p>
           <button type="button">Add to Cart</button>
         </article>
         <!-- Gallery Item 2 -->
         <article class="gallery-item">
-          <img src="https://placehold.co/300x200/eee/ccc?text=Merch+Image" alt="Merchandise 2">
-          <p>Description for merchandise 2.</p>
+          <img src="images/Client2_WaterBottle.png" alt="Merchandise Water Bottle">
+          <p>Water Bottle (32. fl oz)</p>
           <button type="button">Add to Cart</button>
         </article>
         <!-- Gallery Item 3 -->
         <article class="gallery-item">
-          <img src="https://placehold.co/300x200/eee/ccc?text=Merch+Image" alt="Merchandise 3">
-          <p>Description for merchandise 3.</p>
+          <img src="images/Client2_YogaMat.png" alt="Merchandise Yoga Mat">
+          <p>Yoga Mat</p>
           <button type="button">Add to Cart</button>
         </article>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER: Shared across all pages (Same as index.html) -->
+
   <footer>
     <div class="socials">
       <h3>Socials</h3>
-      <a href="#" aria-label="Facebook">FB</a>
-      <a href="#" aria-label="Instagram">IG</a>
-      <a href="#" aria-label="Twitter">TW</a>
+      <a href="#" aria-label="Facebook">Facebook</a>
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="Twitter">Twitter</a>
     </div>
     <div class="subscribe">
       <h3>Subscribe to news</h3>

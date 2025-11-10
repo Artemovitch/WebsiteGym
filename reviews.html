@@ -4,30 +4,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Customer Reviews</title>
+  <title>Reviews | ABC Fitness Studio</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
-  <!-- HEADER: Contains logo, title, and navigation (Same as index.html) -->
   <header>
     <div class="logo">
       <img src="images/logo.png" alt="Site Logo">
     </div>
-    <h1>TITLE</h1>
-    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-      <span class="sr-only">Menu</span>
-      &#9776;
+    <h1>ABC Fitness Studio</h1>
+    
+    <button class="mobile-nav-toggle" aria-controls="mobile-navigation" aria-expanded="false">
+      <span class="screen-reader">Menu</span>
+      <i class="fas fa-bars" aria-hidden="true"></i>
     </button>
+    
     <nav>
-      <ul id="primary-navigation" class="navigation-links desktop-nav">
+      <ul class="navigation-links desktop-nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About us</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="reviews.html">Customer Reviews</a></li>
       </ul>
-      <ul class="navigation-links mobile-nav">
+      <ul id="mobile-navigation" class="navigation-links mobile-nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About us</a></li>
         <li><a href="gallery.html">Gallery</a></li>
@@ -36,45 +38,44 @@
     </nav>
   </header>
 
-  <!-- MAIN CONTENT: Page-specific content goes here -->
   <main>
     <section class="reviews-list">
       <h2>Customer Reviews</h2>
 
       <!-- Review 1 -->
       <article class="review">
-        <h4>Name 1</h4>
-        <p class="review-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+        <h4>Johnny G.</h4>
+        <p class="review-body">"Staff are very helpful and attentive to customers. Gym always feels clean and fresh, definitely recommend."</p>
       </article>
 
       <!-- Review 2 -->
       <article class="review">
-        <h4>Name 2</h4>
-        <p class="review-body">"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+        <h4>Carter P.</h4>
+        <p class="review-body">"I wanted a gym to take my weight loss journey seriously, I have started an Instagram page dedicated to my results. Can't weight to see the progress!"</p>
       </article>
 
       <!-- Review 3 -->
       <article class="review">
-        <h4>Name 3</h4>
-        <p class="review-body">"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
+        <h4>Angel T.</h4>
+        <p class="review-body">"Amazing classes! I took the group kickboxing class and it was amazing, the instructor has taught me so many new techniques. Will definitely be going again!"</p>
       </article>
       
       <!-- Review 4 -->
       <article class="review">
-        <h4>Name 4</h4>
-        <p class="review-body">"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <h4>Isaiah R.</h4>
+        <p class="review-body">"I was looking for a gym where I could focus more on calisthenics and strength training. There was a wide selection of machines to choose from as well as free weights.
+          I found the stretch area to be very unique."</p>
       </article>
-      
     </section>
   </main>
 
-  <!-- FOOTER: Shared across all pages (Same as index.html) -->
+
   <footer>
     <div class="socials">
       <h3>Socials</h3>
-      <a href="#" aria-label="Facebook">FB</a>
-      <a href="#" aria-label="Instagram">IG</a>
-      <a href="#" aria-label="Twitter">TW</a>
+      <a href="#" aria-label="Facebook">Facebook</a>
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="Twitter">Twitter</a>
     </div>
     <div class="subscribe">
       <h3>Subscribe to news</h3>
@@ -85,6 +86,5 @@
       </form>
     </div>
   </footer>
-
 </body>
 </html>
